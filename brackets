@@ -1,0 +1,15 @@
+t=int(input())
+for _ in range(t):
+	n=input()
+	count=0
+	l=[]
+	for i in n:
+		if i=='(':
+			count += 1
+			l.append(count)
+			print(count, end=" ",sep="\n")
+		elif i == ')':
+		    print(l[len(l)-1], end=" ",sep="\n")
+		    del l[len(l)-1]
+		    
+	print()
